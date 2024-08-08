@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pages"
+    "\\pages",
+    "\\resources"
   ],
+  "SelectedNode": "\\pages\\style.css",
   "PreviewInSolutionExplorer": false
 }
