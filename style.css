@@ -1,109 +1,92 @@
-head {
-    color: #111;
-}
-
-@media only screen and (max-width: 400px) {
- .row {
- }
-}
-
-ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-    height: auto;
-    display:inline-flex;
-}
-
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-        li a:hover {
-            background-color: #111;
-        }
-
-        li a .backText {
-            display: none;
-        }
-
-        li a:hover .frontText {
-            display: none;  
-        }
-
-        li a:hover .backText {
-            display: inline;
-        }
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
-    padding: 20px;
     background-image: url("resources/flowerdither.gif");
-    height: 100vh;
 }
 
-/* Header/Blog Title */
-.header {
-    padding: 30px;
-    font-size: 40px;
+.pageheader {
+    background-color: #000000;
+    padding: 40px;
+    opacity: 90%;
+}
+
+h1 {
+    font-size: 60px;
+    opacity: 100%;
+    text-align:center;
+}
+
+.content {
+    display: inline-block;
+}
+
+.main {
+    width: 75%;
+}
+
+.sub {
+    padding: 15px;
     text-align: center;
-    background: #111;
-    opacity: 80%;
+    width: 25%;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    float: left;
-    width: 100%;
-    height: auto;
-}
-
-/* Right column */
-.rightcolumn {
-    width: 100%;
-    height: auto;
-}
-
-/* Add a card effect for articles */
 .card {
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
-    max-width: 100%;
+    margin-top: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+.cardheader {
+    font-size: 45px;
+    color: #111;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    color: white;
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right, .sub {
+        width: 100%;
+    }
 }
 
-.contentgrid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1 2 3;
+img {
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #111;
+}
+
+li a .backText {
+    display: none;
+}
+
+li a:hover .frontText {
+    display: none;
+}
+
+li a:hover .backText {
+    display: inline;
 }
